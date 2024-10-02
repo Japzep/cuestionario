@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Opciones Múltiples</title>
+    <script src="validarRespuestas.js"></script> <!-- Archivo externo -->
+</head>
+<body>
+    <h2>Responde las siguientes preguntas:</h2>
+    <form onsubmit="event.preventDefault(); validarRespuestas();">
+        <label for="pregunta1">¿Cuál es mi bebida favorita?</label><br>
+        <select id="pregunta1" name="pregunta1">
+            <option value="">Seleccione una opción</option>
+            <option value="agua">Agua</option>
+            <option value="cerveza">Cerveza</option>
+            <option value="jugo de durazno">Jugo de Durazno</option>
+            <option value="tepache">Tepache</option>
+            <option value="coca cola">Coca Cola</option>
+            <option value="atole">Atole</option>
+            <option value="yoli">Yoli</option>
+            <option value="whisky">Whisky</option>
+            <option value="cafe">Café</option>
+        </select><br><br>
+
+        <label for="pregunta2">¿Cuál es mi animal favorito?</label><br>
+        <select id="pregunta2" name="pregunta2">
+            <option value="">Seleccione una opción</option>
+            <option value="serpiente">Serpiente</option>
+            <option value="gato">Gato</option>
+            <option value="perro">Perro</option>
+            <option value="cuervo">Tigre</option>
+            <option value="araña">Pájaro</option>
+        </select><br><br>
+
+        <label for="pregunta3">¿Cuál es el apellido de mi cantante favorito?</label><br>
+        <select id="pregunta3" name="pregunta3">
+            <option value="">Seleccione una opción</option>
+            <option value="sinatra">Sinatra</option>
+            <option value="corelli">Corelli</option>
+            <option value="negrete">Negrete</option>
+            <option value="kraus">Kraus</option>
+            <option value="cabral">Cabral</option>
+            <option value="castro">Castro</option>
+        </select><br><br>
+
+        <label for="pregunta4">¿Cuál es mi comida favorita?</label><br>
+        <select id="pregunta4" name="pregunta4">
+            <option value="">Seleccione una opción</option>
+            <option value="morisqueta">Morisqueta</option>
+            <option value="tacos">Tacos</option>
+            <option value="enchiladas">Enchiladas</option>
+            <option value="picadillo">Picadillo</option>
+            <option value="mole">Mole</option>
+            <option value="birria">Birria</option>
+        </select><br><br>
+
+        <label for="pregunta5">¿Cuál es mi color favorito?</label><br>
+        <select id="pregunta5" name="pregunta5">
+            <option value="">Seleccione una opción</option>
+            <option value="gris">Gris</option>
+            <option value="rojo">Rojo</option>
+            <option value="blanco">Blanco</option>
+            <option value="verde">Verde</option>
+            <option value="negro">Negro</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="azul">Azul</option>
+        </select><br><br>
+
+        <label for="pregunta6">¿Cuál es mi golosina favorita?</label><br>
+        <select id="pregunta6" name="pregunta6">
+            <option value="">Seleccione una opción</option>
+            <option value="gomitas">Gomitas</option>
+            <option value="tutsis">Tutsis</option>
+            <option value="chicles">Chicles</option>
+            <option value="mazapanes">Mazapanes</option>
+            <option value="chocolates">Chocolates</option>
+            <option value="cacahuates">Cacahuates</option>
+            <option value="borrachitos">Borrachitos</option>
+        </select><br><br>
+
+        <label for="pregunta7">¿Cuál es mi canción favorita?</label><br>
+        <select id="pregunta7" name="pregunta7">
+            <option value="">Seleccione una opción</option>
+            <option value="fly me to the moon">Fly Me to the Moon</option>
+            <option value="dicitencello vuje">Dicitencello Vuje</option>
+            <option value="entre suspiro y suspiro">Entre Suspiro y Suspiro</option>
+            <option value="a la orilla de un palmar">A la Orilla de un Palmar</option>
+            <option value="no soy de aquí ni soy de alla">No Soy de Aquí, Ni Soy de Allá</option>
+            <option value="agua nueva">Agua Nueva</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Mensaje de error si el archivo JS no se carga -->
+    <noscript>
+        <p style="color: red;">JavaScript está deshabilitado en tu navegador o no se cargó el archivo. Asegúrate de habilitar JavaScript.</p>
+    </noscript>
+</body>
+</html>
